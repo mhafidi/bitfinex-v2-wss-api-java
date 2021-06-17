@@ -57,9 +57,11 @@ compile 'com.github.jnidzwetzki:bitfinex-v2-wss-api:${bitfinex-v2-wss-api.versio
 ```
 
 # Changelog
-You will find the changelog of the project [here](https://github.com/jnidzwetzki/bitfinex-v2-wss-api-java/blob/master/CHANGELOG.md).
+You will find the changelog of the Bitfinex API project [here](https://github.com/jnidzwetzki/bitfinex-v2-wss-api-java/blob/master/CHANGELOG.md).
 
 # Recent API changes
+## Version 0.7.2
+Adding analytics brick to perform trading strategies for more information checkout [here](https://github.com/mhafidi/bitfinex-v2-wss-api-java) 
 
 ## Version 0.7.1
 The old order flags are deprecated by Bitfinex and replaced by the new 'WSv2 order flag'. This change is adapted in this version. Methods like `BitfinexOrderBuilder.setHidden()` or `BitfinexOrderBuilder.setReduce()` are replaced by `BitfinexOrderBuilder.withOrderFlag(BitfinexOrderFlag)`.
