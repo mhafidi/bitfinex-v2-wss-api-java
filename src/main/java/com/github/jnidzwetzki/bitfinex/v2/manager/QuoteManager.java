@@ -233,7 +233,7 @@ public class QuoteManager extends AbstractManager {
 	/**
 	 * Process a list with candlesticks
 	 * @param symbol
-	 * @param ticksArray
+	 * @param ticksBuffer
 	 */
 	public void handleCandlestickCollection(final BitfinexCandlestickSymbol symbol, final Collection<BitfinexCandle> ticksBuffer) {
 		candleCallbacks.handleEventsCollection(symbol, ticksBuffer);
@@ -241,7 +241,7 @@ public class QuoteManager extends AbstractManager {
 
 	/**
 	 * Handle a new candlestick
-	 * @param symbol
+	 * @param currencyPair
 	 * @param tick
 	 */
 	public void handleNewCandlestick(final BitfinexCandlestickSymbol currencyPair, final BitfinexCandle tick) {
@@ -251,8 +251,7 @@ public class QuoteManager extends AbstractManager {
 
 	/**
 	 * Subscribe candles for a symbol
-	 * @param currencyPair
-	 * @param timeframe
+	 * @param symbol
 	 * @return 
 	 * @throws BitfinexClientException
 	 */

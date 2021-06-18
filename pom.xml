@@ -107,6 +107,11 @@
 			<artifactId>bboxdb-commons</artifactId>
 			<version>0.9.8</version>
 		</dependency>
+		<dependency>
+			<groupId>org.ta4j</groupId>
+			<artifactId>ta4j-core</artifactId>
+			<version>0.14</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/gov.nist.math/jama -->
 		<dependency>
 			<groupId>gov.nist.math</groupId>

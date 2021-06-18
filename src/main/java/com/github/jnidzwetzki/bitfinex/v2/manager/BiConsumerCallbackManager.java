@@ -75,7 +75,7 @@ public class BiConsumerCallbackManager<S, T> extends AbstractManager {
 	/**
 	 * Process a list with event
 	 * @param symbol
-	 * @param ticksArray
+	 * @param elements
 	 */
 	public void handleEventsCollection(final S symbol, final Collection<T> elements) {
 		
