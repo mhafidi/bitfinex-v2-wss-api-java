@@ -46,7 +46,8 @@ public class BitfinexCandle implements Comparable<BitfinexCandle>{
 	 * The low price
 	 */
 	private final BigDecimal low;
-	
+
+	private  long duration;
 	/**
 	 * The volume
 	 */
@@ -79,9 +80,17 @@ public class BitfinexCandle implements Comparable<BitfinexCandle>{
 		
 		this(timestamp, open, close,  high, low, Optional.of(volume));
 	}
-	
-	public BitfinexCandle(final long timestamp, final double open, final double close, 
-			final double high, final double low, final double volume) {
+
+	public long getDuration() {
+		return duration;
+	}
+
+	public void setDuration(long duration) {
+		this.duration = duration;
+	}
+
+	public BitfinexCandle(final long timestamp, final double open, final double close,
+						  final double high, final double low, final double volume) {
 		
 		this(timestamp, new BigDecimal(open), new BigDecimal(close),  new BigDecimal(high), 
 				new BigDecimal(low), Optional.of(new BigDecimal(volume)));
